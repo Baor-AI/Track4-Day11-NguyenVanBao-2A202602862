@@ -1,0 +1,47 @@
+{
+ "format": "avsim-studio/1",
+ "params": {
+  "cutT0": 6.5,
+  "cutDur": 2.4,
+  "cutV": 15,
+  "pedT0": 11,
+  "pedV": 1.45,
+  "busGo": 17,
+  "cutDs": -4,
+  "tgT": 0.9,
+  "mu": 0.8,
+  "cutGap": 12,
+  "cutBrake": 0,
+  "pedGap": 4.5,
+  "pedLook": 1,
+  "civil": true
+ },
+ "policy": {},
+ "hazards": [
+  {
+   "x": 150,
+   "side": "S",
+   "v": 2.5,
+   "t0": 1.5,
+   "trig": 30,
+   "type": "ped"
+  }
+ ],
+ "ego": "planner",
+ "space": {
+  "h0_x": [
+   130,
+   260
+  ],
+  "h0_v": [
+   1.2,
+   3.0
+  ],
+  "h0_trig": [
+   15,
+   45
+  ]
+ },
+ "exposure": 0.05,
+ "why": "Người băng ngang giữa dãy nhà (không có vạch), bước ra từ lề phải khi xe ta còn cách 15–45 m. h0_x 130–260 m: đoạn phố sau vạch qua đường (x≈121), nơi không có vạch. h0_v 1,2–3,0 m/s: tốc độ đi bộ trung bình người lớn 1,2–1,5 m/s (Knoblauch et al. 1996, TRR 1538; MUTCD dùng 1,07 m/s), người băng vội/chạy lên tới ~3 m/s. h0_trig 15–45 m: khe người đi bộ chấp nhận khi băng ngoài vạch thường 2–4 s; với xe ta ~11 m/s là ~20–45 m, 15 m là trường hợp liều lĩnh. exposure 0,05/chuyến: giả định ~1 lần gặp người băng ngang trong tầm xung đột mỗi 20 chuyến đi trên phố đô thị ngắn như thị trấn này; đây là giả định, cần dữ liệu đếm người qua đường trái phép (vd. quan sát video tại chỗ) để thay."
+}
